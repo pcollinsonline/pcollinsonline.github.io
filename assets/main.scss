@@ -1,0 +1,111 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+@import "typography";
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Varela', sans-serif;
+}
+
+.post-list {
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.post-link {
+  font-size: 28px;
+  color: #282827;
+
+  &:visited {
+    color : #282827;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.post-excerpt {
+  position: relative;
+  top: -.25rem;
+}
+
+.site-header, .site-nav {
+  background-color: #282827;
+  color: #acacac;
+
+  .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.site-nav .page-link {
+  color: #acacac;
+  &:visited {
+    color: #acacac;
+  }
+}
+
+.site-title {
+  font-family: Ailerons, sans-serif;
+  font-size: 48px;
+
+  &:visited {
+    color: #acacac;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-nav .menu-icon > svg path {
+  fill: #acacac;
+}
+
+.post-list {
+  &>li {
+    padding-left: 7rem;
+    position: relative;
+
+    .post-date-box {
+      color : #828282;
+      list-style: none;
+      position: absolute;
+      left: 0;
+      top: .25rem;
+      font-size: 14px;
+      padding: .5rem .75rem;
+      border-radius: 4px;
+      border: thin solid #acacac;
+      &>li:first-child {
+        letter-spacing: 1px;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    top: 25px;
+  }
+
+  .site-title {
+    font-size: 36px;
+  }
+
+  .site-header {
+    .wrapper {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+}
