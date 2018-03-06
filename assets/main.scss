@@ -91,6 +91,16 @@ body {
   }
 }
 
+.a50-footer {
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+
+  li {
+    margin-bottom: .25rem;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .site-nav {
